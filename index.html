@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CLCPC Waveform Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CLCPC Pronunciation Mirror</h1>
+    <p>Listen and repeat the Comanche word.</p>
+
+    <label>Word:
+      <select id="word-select">
+        <option value="aama">aama (arm)</option>
+        <option value="kwahi">kwahi (back)</option>
+        <option value="motso">motso (beard)</option>
+      </select>
+    </label>
+
+    <div class="wave-container">
+      <p>Model</p>
+      <canvas id="modelCanvas" width="500" height="100"></canvas>
+      <button onclick="playModel()">🔊 Play</button>
+    </div>
+
+    <div class="wave-container">
+      <p>Learner</p>
+      <canvas id="learnerCanvas" width="500" height="100"></canvas>
+      <button onclick="recordLearner()">🎤 Repeat</button>
+    </div>
+  </div>
+
+  <script src="waveform.js"></script>
+</body>
+</html>
